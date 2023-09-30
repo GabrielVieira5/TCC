@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(119, 102, 102);
+}
+
+header > nav{
+    text-align: center;
+}
+
+.text-navbar{
+    color: white;
+    text-decoration: none;
+    padding: 0 15px;
+    font-size: 19px;
+}
+section{
+    width: 900px;
+    height: 400px;
+    background-color: white;
+    display: flex;
+    
+}
+.conteudo{
+    width: 415px;
+    padding: 15px;
+}
