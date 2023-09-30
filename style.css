@@ -7,21 +7,63 @@ body{
 header > nav{
     text-align: center;
 }
-
 .text-navbar{
     color: white;
     text-decoration: none;
     padding: 0 15px;
     font-size: 19px;
+    transition: .5s;
 }
+.text-navbar:hover{
+    transition: .5s;
+    font-size: 23px;
+    
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo{
+    width: 55px;
+    align-items: center;
+    padding-bottom: 25px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
 section{
     width: 900px;
     height: 400px;
     background-color: white;
     display: flex;
-    
+    border-radius: 7px;
+    box-shadow: 4px 7px 10px rgba(0, 0, 0, 0.447);
+    margin-top: 25px;
+
 }
-.conteudo{
+.conteudo, .titulo{
     width: 415px;
     padding: 15px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.imagem-base{
+    width: 50%;
+    border-radius: 0 7px 7px 0;
+}
+
+.conteudo-principal{
+    flex-direction: column;
+    width: 50%;
+}
+
+.navbar-right{
+    display: flex;
+    align-items: flex-end;
 }
