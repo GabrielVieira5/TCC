@@ -1,7 +1,21 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: fontefoda;
+    src: url(fontes/Roman\ SD.ttf);
+}
+
+:root{
+    --cor1: #B9A8A5;
+    --cor2: #8C0303;
+    --cor3: #D91414;
+    --cor4: #31343A;
+    --cor5: #0D0D0D;
+
+}
+
 body{
-    background-color: white;
+    background-color: var(--cor1);
 }
 
 header > nav{
@@ -18,9 +32,11 @@ header > nav{
     padding: 0 15px;
     font-size: 19px;
     transition: .5s;
+    font-family: Verdana, Geneva, Tahoma, sans-serif, 'Times New Roman', Times, serif;
     
 }
 .text-navbar:hover{
+    color: var(--cor3);
     transition: .5s;
     font-size: 23px;
     
@@ -33,7 +49,7 @@ header{
 }
 
 .logo{
-    width: 75px;
+    width: 105px;
     
     align-items: flex-start;
 }
@@ -56,7 +72,7 @@ section{
 .conteudo, .titulo{
     width: 415px;
     padding: 15px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: fontefoda, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: white;
 }
 
@@ -73,4 +89,10 @@ section{
 .navbar-right{
     display: flex;
     align-items: flex-end;
+}
+
+#caixa{
+    border: 0;
+    border-radius: 7px;
+
 }
