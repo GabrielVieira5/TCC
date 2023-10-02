@@ -15,7 +15,8 @@
 }
 
 body{
-    background-color: rgb(98, 98, 98);
+    /*background-color: rgb(98, 98, 98);*/
+    background: url(imagens/wallpapertest.jpeg) center center;
 }
 
 header > nav{
