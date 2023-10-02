@@ -1,18 +1,24 @@
 @charset "UTF-8";
 
 body{
-    background-color: rgb(119, 102, 102);
+    background-color: white;
 }
 
 header > nav{
+    display: flex;
+    width: 100vw;
     text-align: center;
+    align-items: flex-end;
+    justify-content: center;
 }
+
 .text-navbar{
-    color: white;
+    color: black;
     text-decoration: none;
     padding: 0 15px;
     font-size: 19px;
     transition: .5s;
+    
 }
 .text-navbar:hover{
     transition: .5s;
@@ -22,14 +28,14 @@ header > nav{
 
 header{
     display: flex;
-    flex-direction: column;
     align-items: center;
+
 }
 
 .logo{
-    width: 55px;
-    align-items: center;
-    padding-bottom: 25px;
+    width: 75px;
+    
+    align-items: flex-start;
 }
 
 main{
@@ -40,7 +46,7 @@ main{
 section{
     width: 900px;
     height: 400px;
-    background-color: white;
+    background-color: rgb(41, 41, 41);
     display: flex;
     border-radius: 7px;
     box-shadow: 4px 7px 10px rgba(0, 0, 0, 0.447);
@@ -51,6 +57,7 @@ section{
     width: 415px;
     padding: 15px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
 }
 
 .imagem-base{
