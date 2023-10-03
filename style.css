@@ -65,6 +65,7 @@ section{
     box-shadow: 4px 7px 10px rgba(0, 0, 0, 0.447);
     margin-top: 25px;
     margin: auto;
+    margin-bottom: 55px;
 }
 .conteudo, .titulo{
     width: 415px;
@@ -103,4 +104,8 @@ button{
     margin: auto;
     margin-top: 15px;
 
+}
+
+.conteudo-principal{
+    display: flex;
 }
