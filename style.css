@@ -74,12 +74,15 @@ section{
     color: white;
 }
 
-.imagem-base{
+.imagem-base,
+.lado{
     width: 50%;
     border-radius: 0 7px 7px 0;
+    opacity: 1;
 }
 
-.conteudo-principal{
+.conteudo-principal,
+.conteudo-intehrantes{
     flex-direction: column;
     width: 50%;
 }
@@ -109,3 +112,64 @@ button{
 .conteudo-principal{
     display: flex;
 }
+
+.arrow-left,
+.arrow-right{
+    position: absolute;
+    left: 0;
+    right: auto;
+    width: 40px;
+    top: 0;
+    bottom: 0;
+    border: 0;
+    opacity: .2;
+    transition: all .5s ; 
+    background: none;
+    
+}
+
+.arrow-left:hover,
+.arrow-right:hover{
+    opacity: 1;
+    background-color: grey;
+}
+
+.integrantes{
+    position: relative; 
+    flex-flow: row nowrap;
+    overflow-x: auto;
+    gap: 20px;
+}
+
+.arrow-right{
+    left: auto;
+    right: 0;
+}
+
+.conteudo-integrantes{
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+
+.item-indicado{
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.integrantes::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .integrantes {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  
