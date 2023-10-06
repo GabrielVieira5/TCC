@@ -1,6 +1,6 @@
 const controls = document.querySelectorAll('.control');
 let currentItem = 0;
-const item = document.querySelectorAll('.conteudo-integrantes');
+const item = document.querySelectorAll('.item');
 const maxitem = item.length;
 
 controls.forEach((control) => {
@@ -8,28 +8,32 @@ controls.forEach((control) => {
         const isLeft = control.classList.contains("arrow-left");
 
         //ajuste dos botões através de números
-        if (isLeft){
+        if (isLeft) {
             currentItem -= 1;
         }
         else {
             currentItem += 1;
         }
-        //ajuste do número máximo dos botões: 
-        if (currentItem => maxitem){
+
+        if (currentItem >= maxitem){
             currentItem = 0;
         }
         if (currentItem < 0){
-            currentItem = maxitem -1;
+            currentItem = maxitem - 1;
         }
 
+        
+
         item.forEach(itens =>
-            itens.classList.remove('item-indicado'));
+            itens.classList.remove('exibindo'));
 
             item[currentItem].scrollIntoView({
                 inline: "center",
                 behavior: "smooth"
             });
 
-            item[currentItem].classList.add("item-indicado");
+            item[currentItem].classList.add("exibindo");
+
+            console.log('control', isLeft, currentItem);
     })
 })
