@@ -145,5 +145,29 @@ section{
     color: white;
     text-align: center;
 }
+
+.arrow-left, .arrow-right{
+    position: absolute;
+    left: 0;
+    right: 100%;
+    top: 40%;
+    bottom: 40%;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 45px;
+    transition: all ease-in-out .3s;
+    opacity: .2;
+}
+
+.arrow-right{
+    right: 0;
+    left: 100%;
+}
+
+.arrow-left:hover, .arrow-right:hover{
+    
+    opacity: 1;
+}
   
 
