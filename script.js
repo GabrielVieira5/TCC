@@ -37,3 +37,43 @@ controls.forEach((control) => {
             console.log('control', isLeft, currentItem);
     })
 })
+
+
+
+const controle = document.querySelectorAll('.seta');
+let itemcalculo = 0;
+const botao = document.querySelectorAll('.sec');
+const maximo = botao.length;
+
+controle.forEach((controles) => {
+    controles.addEventListener("click", () => {
+        const isdown = controles.classList.contains("arrow-down");
+
+        if (isdown){
+            itemcalculo -= 1;
+        }
+        else {
+            itemcalculo += 1;
+        }
+
+        if(itemcalculo > maximo){
+            itemcalculo = 0;
+        }
+        if(itemcalculo < 0) {
+        itemcalculo = maximo - 1;
+        }
+
+        botao.forEach(sect => 
+            sect.classList.remove('.sec-tela'));
+
+            botao[itemcalculo].scrollIntoView({
+                inline: "start",
+                behavior: "smooth"
+            });
+            botao[itemcalculo].classList.add(".sec-tela");
+
+            console.log('controle', isdown, itemcalculo);
+    })
+} )
+
+

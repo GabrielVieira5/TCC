@@ -80,7 +80,7 @@ section.fullscreen-section, section.integrantes{
     box-shadow: 4px 7px 10px rgba(0, 0, 0, 0.447);
     margin-top: 25px;
     margin: auto;
-    margin-bottom: 315px;
+    
 }
 .conteudo, .titulo{
     width: 415px;
@@ -187,7 +187,6 @@ section.fullscreen-section, section.integrantes{
 }
 
 .arrow-left:hover, .arrow-right:hover{
-    
     opacity: 1;
 }
 
@@ -220,6 +219,28 @@ section.fullscreen-section, section.integrantes{
     font-size: 35px;
 }
 
+.arrow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 65px;
+
+}
+
+.arrow-down, .arrow-up{
+    padding: 5px;
+    background: none;
+    border: 0;
+    opacity: .3;
+    font-size: 25px;
+    transition: all ease-in-out .4s;
+}
+.arrow-down:hover, .arrow-up:hover{
+    background-color: black;
+    color: white;
+    border-radius: 45px;
+    opacity: 1;
+}
 
 
 
