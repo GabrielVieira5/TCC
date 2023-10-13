@@ -25,14 +25,14 @@ controls.forEach((control) => {
         
 
         item.forEach(itens =>
-            itens.classList.remove('exibindo'));
+            itens.classList.remove('principal-item'));
 
             item[currentItem].scrollIntoView({
                 inline: "center",
                 behavior: "smooth"
             });
 
-            item[currentItem].classList.add("exibindo");
+            item[currentItem].classList.add("principal-item");
 
             console.log('control', isLeft, currentItem);
     })

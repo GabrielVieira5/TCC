@@ -5,6 +5,11 @@
     src: url(fontes/Roman\ SD.ttf);
 }
 
+@font-face {
+    font-family: fonte-navbar;
+    src: url(fontes/Dortmund-ExtraBold.otf);
+}
+
 :root{
     --cor1: #B9A8A5;
     --cor2: #8C0303;
@@ -17,6 +22,7 @@
 body{
     /*background-color: rgb(98, 98, 98);*/
     background: url(imagens/wallpapertest.jpeg) center center;
+    margin: 0;
 }
 
 header > nav{
@@ -25,15 +31,16 @@ header > nav{
     text-align: center;
     align-items: flex-end;
     justify-content: center;
+   
 }
 
 .text-navbar{
-    color: white;
+    color: black;
     text-decoration: none;
     padding: 0 15px;
     font-size: 19px;
     transition: .5s;
-    font-family: Verdana, Geneva, Tahoma, sans-serif, 'Times New Roman', Times, serif;
+    font-family: fonte-navbar, Verdana, Geneva, Tahoma, sans-serif, 'Times New Roman', Times, serif;
     
 }
 .text-navbar:hover{
@@ -46,7 +53,10 @@ header > nav{
 header{
     display: flex;
     align-items: center;
-
+    background-color: white;
+    margin: 0;
+    padding: 20px;
+    margin-bottom: 20px;
 }
 
 .logo{
@@ -56,9 +66,9 @@ header{
 }
 
 
-section{
+section.fullscreen-section, section.integrantes{
     width: 900px;
-    height: 400px;
+    height: auto;
     background-color: rgb(41, 41, 41);
     display: flex;
     border-radius: 7px;
@@ -111,6 +121,8 @@ section{
 .integrantes{
     position: relative;
     margin: 0 auto;
+    height: auto;
+    padding: 15px;
     
 }
 
@@ -132,11 +144,12 @@ section{
     justify-content: center;
     align-items: center;
     border-radius: 17px;
+    transition: all ease-in-out .4s;
   }
 
   .principal-item{
     opacity: 1;
-    
+    transition: all ease-in-out .3s;
     height: auto;
   }
 
@@ -158,16 +171,56 @@ section{
     font-size: 45px;
     transition: all ease-in-out .3s;
     opacity: .2;
+    z-index: 15;
 }
 
 .arrow-right{
     right: 0;
-    left: 100%;
+    left: 97%;
+    top: 40%;
+    bottom: 40%;
 }
 
 .arrow-left:hover, .arrow-right:hover{
     
     opacity: 1;
 }
-  
 
+.imgint{
+    height: 350px;
+}
+  
+.projeto{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    background: url(imagens/programming.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 696px;
+    width: 100%;
+    
+}
+
+.pr-text1, .pr-text2{
+    font-size: 25px;
+    right: 0;
+    color: white;
+    padding-right: 20px;
+}
+
+.pr-text1{
+    font-weight: bolder;
+    font-size: 35px;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.gallery-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .gallery-wrapper {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
