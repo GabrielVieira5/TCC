@@ -66,16 +66,21 @@ header{
 }
 
 
+.fullscreen-section{
+    height: 445px;
+    
+}
+
 section.fullscreen-section, section.integrantes{
     width: 900px;
-    height: auto;
+    
     background-color: rgb(41, 41, 41);
     display: flex;
     border-radius: 7px;
     box-shadow: 4px 7px 10px rgba(0, 0, 0, 0.447);
     margin-top: 25px;
     margin: auto;
-    margin-bottom: 55px;
+    margin-bottom: 315px;
 }
 .conteudo, .titulo{
     width: 415px;
@@ -214,6 +219,22 @@ section.fullscreen-section, section.integrantes{
     font-weight: bolder;
     font-size: 35px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Hide scrollbar for Chrome, Safari and Opera */
 .gallery-wrapper::-webkit-scrollbar {
     display: none;
