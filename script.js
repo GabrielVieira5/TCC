@@ -39,7 +39,7 @@ controls.forEach((control) => {
 })
 
 
-
+/*
 const controle = document.querySelectorAll('.seta');
 let itemcalculo = 0;
 const botao = document.querySelectorAll('.sec');
@@ -75,5 +75,5 @@ controle.forEach((controles) => {
             console.log('controle', isdown, itemcalculo);
     })
 } )
-
+*/
 

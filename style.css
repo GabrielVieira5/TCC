@@ -200,11 +200,16 @@ section.fullscreen-section, section.integrantes{
     align-items: flex-end;
     justify-content: center;
     background: url(imagens/programming.jpg);
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: center;
     height: 696px;
     width: 100%;
-    
+    transition: all ease-in-out .5s;
+    margin: 55px 0;
+}
+
+.projeto:hover{
+    background-size: 110% 110%;
 }
 
 .pr-text1, .pr-text2{
@@ -219,28 +224,22 @@ section.fullscreen-section, section.integrantes{
     font-size: 35px;
 }
 
-.arrow{
+.sobre{
     display: flex;
+    margin-top: 45px;
     align-items: center;
     justify-content: center;
-    height: 65px;
-
 }
-
-.arrow-down, .arrow-up{
-    padding: 5px;
-    background: none;
-    border: 0;
-    opacity: .3;
-    font-size: 25px;
-    transition: all ease-in-out .4s;
-}
-.arrow-down:hover, .arrow-up:hover{
-    background-color: black;
+.about{
+    margin: auto;
+    flex-direction: column;
     color: white;
-    border-radius: 45px;
-    opacity: 1;
+    margin: 0 15px;
+    width: 245px;
+    text-align: center;
 }
+
+
 
 
 
