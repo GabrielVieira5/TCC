@@ -31,17 +31,18 @@ header > nav{
     text-align: center;
     align-items: flex-end;
     justify-content: center;
-   
+    background-color: blue;
 }
 
 .text-navbar{
-    color: black;
+    color: white;
     text-decoration: none;
-    padding: 0 15px;
+    margin: 0 15px;
     font-size: 19px;
     transition: .5s;
     font-family: fonte-navbar, Verdana, Geneva, Tahoma, sans-serif, 'Times New Roman', Times, serif;
-    
+    padding: 15px;
+    backdrop-filter: blur(17px);
 }
 .text-navbar:hover{
     color: var(--cor3);
@@ -53,10 +54,11 @@ header > nav{
 header{
     display: flex;
     align-items: center;
-    background-color: white;
+    flex-direction: column;
     margin: 0;
-    padding: 20px;
+    
     margin-bottom: 20px;
+    background-color: white;
 }
 
 .logo{
@@ -177,6 +179,7 @@ section.fullscreen-section, section.integrantes{
     transition: all ease-in-out .3s;
     opacity: .2;
     z-index: 15;
+    text-shadow: 1px 1px 1px red;
 }
 
 .arrow-right{
@@ -188,6 +191,7 @@ section.fullscreen-section, section.integrantes{
 
 .arrow-left:hover, .arrow-right:hover{
     opacity: 1;
+    
 }
 
 .imgint{
