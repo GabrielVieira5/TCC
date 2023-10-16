@@ -10,6 +10,12 @@
     src: url(fontes/Dortmund-ExtraBold.otf);
 }
 
+@font-face {
+    font-family: rubik;
+    src: url(fontes/Rubik-VariableFont_wght.ttf);
+}
+
+
 :root{
     --cor1: #B9A8A5;
     --cor2: #8C0303;
@@ -27,22 +33,24 @@ body{
 
 header > nav{
     display: flex;
-    width: 100vw;
+    position: absolute;
+    right: 10%;
     text-align: center;
     align-items: flex-end;
     justify-content: center;
-    background-color: blue;
+    
 }
 
 .text-navbar{
-    color: white;
+    color: black;
     text-decoration: none;
     margin: 0 15px;
     font-size: 19px;
     transition: .5s;
-    font-family: fonte-navbar, Verdana, Geneva, Tahoma, sans-serif, 'Times New Roman', Times, serif;
+    font-family: rubik, Verdana, Geneva, Tahoma, sans-serif, 'Times New Roman', Times, serif;
     padding: 15px;
     backdrop-filter: blur(17px);
+    text-transform: uppercase
 }
 .text-navbar:hover{
     color: var(--cor3);
@@ -54,10 +62,8 @@ header > nav{
 header{
     display: flex;
     align-items: center;
-    flex-direction: column;
+    position: relative;
     margin: 0;
-    
-    margin-bottom: 20px;
     background-color: white;
 }
 
@@ -65,6 +71,7 @@ header{
     width: 90px;
     margin-left: 7px;
     align-items: flex-start;
+    padding: 15px;
 }
 
 
@@ -72,8 +79,21 @@ header{
     height: 445px;
     
 }
-
+/*
 section.fullscreen-section, section.integrantes{
+    width: 900px;
+    
+    background-color: rgb(41, 41, 41);
+    display: flex;
+    border-radius: 7px;
+    box-shadow: 4px 7px 10px rgba(0, 0, 0, 0.447);
+    margin-top: 25px;
+    margin: auto;
+    
+}
+*/
+
+section.integrantes{
     width: 900px;
     
     background-color: rgb(41, 41, 41);
@@ -101,7 +121,7 @@ section.fullscreen-section, section.integrantes{
 .conteudo-principal,
 .conteudo-intehrantes{
     flex-direction: column;
-    width: 50%;
+    
 }
 
 .navbar-right{
@@ -243,7 +263,58 @@ section.fullscreen-section, section.integrantes{
     text-align: center;
 }
 
+.fullscreen-section{
+    display: flex;
+    align-items: center;
+    background: url(imagens/base-escurecida.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    height: 696px;
+    width: 100%;
+    transition: all ease-in-out .5s;
+    
+}
 
+.conteudo-principal{
+    margin-left: 10%;
+    font-size: 20px;
+    width: auto;
+}
+
+.conteudo{
+    width: 600px;
+}
+
+.btn-mais{
+    color: white;
+    text-decoration: none;
+    
+    border: 1px solid white;
+    padding: 3px 25px;
+    text-transform: uppercase;
+    transition: all ease-in-out .5s;
+    justify-content: center;
+    align-items: center;
+    font-family: rubik;
+    font-size: 20px;
+    text-align: center;
+}
+.btn-mais:hover{
+    background-color: white;
+    box-shadow: 0 0 11px 0px white;
+    color: black;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    margin-left: 12%;
+}
+
+.btn-down{
+    font-size: 40px;
+    margin-bottom: 17px; 
+}
 
 
 
