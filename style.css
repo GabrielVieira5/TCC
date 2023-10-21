@@ -122,6 +122,10 @@ section.integrantes{
     color: white;
 }
 
+.titulo{
+    width: 880px;
+}
+
 .imagem-base,
 .lado{
     width: 50%;
