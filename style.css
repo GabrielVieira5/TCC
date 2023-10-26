@@ -319,7 +319,6 @@ section.integrantes{
 .buttons{
     display: flex;
     flex-direction: column;
-    margin-left: 12%;
 }
 
 .btn-down{
